@@ -1,0 +1,29 @@
+
+spring:
+  application:
+    name: service-user
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/ljr?characterEncoding=utf8
+    username: root
+    password: 422422
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8081
+eureka:
+
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+          defaultZone: http://localhost:9093/eureka
+logging:
+  level:
+    com : debug
+    spring: debug
+
+
+
